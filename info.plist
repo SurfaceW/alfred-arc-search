@@ -8,6 +8,19 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>0BBD9DCE-FBDB-4B3F-9659-7B797C7B5B44</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9894897D-3314-4CB2-A462-584F89EBC2B2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1B00241F-BE3C-4FFC-ABD0-8E93431AB936</key>
 		<array/>
 		<key>27B3D14A-6794-43D2-8EC9-5681FB829A88</key>
@@ -167,6 +180,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E1D26121-C02D-4682-9F3C-FE12EFE82842</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D6701D60-7192-4825-A7C3-64937F16C147</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E8FBB34A-8FA9-43D6-BA9B-CFBE4D3E93C3</key>
 		<array>
 			<dict>
@@ -220,31 +246,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
+				<key>autopaste</key>
 				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>E8FBB34A-8FA9-43D6-BA9B-CFBE4D3E93C3</string>
+			<string>A75E8990-19CF-44EC-BE21-099FFAC45962</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -271,6 +287,35 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>686055B1-1373-4E1D-871E-414ADDCB45BD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E8FBB34A-8FA9-43D6-BA9B-CFBE4D3E93C3</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -341,25 +386,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>6E7C5CC6-D2C9-4B3B-9449-DD02F78088C2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>A75E8990-19CF-44EC-BE21-099FFAC45962</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -614,6 +640,83 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./select-workbench-split-tab.js</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9894897D-3314-4CB2-A462-584F89EBC2B2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>1</integer>
+				<key>hotmod</key>
+				<integer>1703936</integer>
+				<key>hotstring</key>
+				<string>S</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0BBD9DCE-FBDB-4B3F-9659-7B797C7B5B44</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>./select-workbench-tab.js</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>53DCF362-4A38-41CA-8AC9-0CA048F975DB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -645,12 +748,43 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E1D26121-C02D-4682-9F3C-FE12EFE82842</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>./select-workbench-tab.js</string>
+				<string>./select-inbox-tab.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -661,7 +795,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>53DCF362-4A38-41CA-8AC9-0CA048F975DB</string>
+			<string>D6701D60-7192-4825-A7C3-64937F16C147</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -753,6 +887,13 @@ And by Locations (`pinned`, `unpinned`, `topApp`/`Favorites`) in all tabs list
 `Enter` to show in Arc, `Control+Enter` on selected tabs to copy URL.</string>
 	<key>uidata</key>
 	<dict>
+		<key>0BBD9DCE-FBDB-4B3F-9659-7B797C7B5B44</key>
+		<dict>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>525</real>
+		</dict>
 		<key>1B00241F-BE3C-4FFC-ABD0-8E93431AB936</key>
 		<dict>
 			<key>xpos</key>
@@ -809,6 +950,13 @@ And by Locations (`pinned`, `unpinned`, `topApp`/`Favorites`) in all tabs list
 			<key>ypos</key>
 			<real>25</real>
 		</dict>
+		<key>9894897D-3314-4CB2-A462-584F89EBC2B2</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>510</real>
+		</dict>
 		<key>9A413169-D486-4359-94C1-B61CA46043D5</key>
 		<dict>
 			<key>xpos</key>
@@ -843,6 +991,20 @@ And by Locations (`pinned`, `unpinned`, `topApp`/`Favorites`) in all tabs list
 			<real>270</real>
 			<key>ypos</key>
 			<real>300</real>
+		</dict>
+		<key>D6701D60-7192-4825-A7C3-64937F16C147</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>720</real>
+		</dict>
+		<key>E1D26121-C02D-4682-9F3C-FE12EFE82842</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>720</real>
 		</dict>
 		<key>E8FBB34A-8FA9-43D6-BA9B-CFBE4D3E93C3</key>
 		<dict>
